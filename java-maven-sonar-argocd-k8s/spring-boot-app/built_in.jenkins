@@ -7,7 +7,7 @@ pipeline {
                 script {
                     try {
                         // Clone the repository
-                        sh 'git pull gistry main'
+                        sh 'git clone gistry main'
                     } catch (Exception e) {
                         // Print the error message
                         echo "Failed to clone repository: ${e.message}"
