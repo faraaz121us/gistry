@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                  try {
                         // Clone the repository
                         git 'https://github.com/faraaz121us/gistry.git'
                     } catch (Exception e) {
